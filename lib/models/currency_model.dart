@@ -9,7 +9,7 @@ class Currency {
     return Currency(
       code: json['code'] as String,
       name: json['name'] as String,
-      bid: double.parse(json['bid'] as String).toString(),
+      bid: double.parse(json['bid'] as String).toStringAsFixed(4),
     );
   }
 }
